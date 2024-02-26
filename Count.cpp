@@ -3,10 +3,24 @@
 
 using namespace std;
 
-void count_zeros_ones(int arr[], int size, int& count_zeros, int& count_ones) {
+void count_zeros_ones(int arr[], int size, int& count_zeros, int& count_ones) 
+{
     // Write Function Only
-
-
+  count_ones=0;
+  count_zeros=0;
+  for (int i=0;i<size;i++)
+  {
+    if (arr[i]==1)
+    {
+        count_ones++;  
+    }
+    else if (arr[i]==0)
+    {
+      count_zeros++;
+    }
+  }
+cout<<"The number of ones are : "<<count_ones<<endl;
+cout<<"The number of zeros are: "<<count_zeros<<endl;  
     
 
 }

@@ -4,12 +4,17 @@
 
 using namespace std;
 
-int find_missing_number(int arr[], int size) {
+int find_missing_number(int arr[], int size) 
+{
         //   Write Function Only
 
-
-
-
+int total = (size + 1) * (size + 2) / 2; 
+int sum = 0;
+for (int i = 0; i < size; ++i)
+    {
+        sum += arr[i];
+    }
+return total - sum;
 
 }
 
